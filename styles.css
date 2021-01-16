@@ -1,0 +1,202 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background: #ff7a7a;
+  background-image: url("./images/bg-intro-desktop.png");
+  background-position: 0 center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container .form-wrapper .btn, .container .form-wrapper .form-group .submit-btn {
+  width: 100%;
+  padding: 15px 0px;
+  border: none;
+  border-radius: 10px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.container {
+  max-width: 1140px;
+  height: 100vh;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .intro {
+  width: 50%;
+  padding: 20px;
+}
+
+.container .intro h2 {
+  color: #fff;
+  font-size: 46px;
+  line-height: 50px;
+  margin-bottom: 30px;
+}
+
+.container .intro p {
+  color: #fff;
+  font-size: 16px;
+}
+
+.container .form-wrapper {
+  width: 50%;
+  padding: 20px;
+}
+
+.container .form-wrapper .btn {
+  background-color: #6055a5;
+  -webkit-box-shadow: 0px 8px 8px -2px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 8px 8px -2px rgba(0, 0, 0, 0.5);
+}
+
+.container .form-wrapper .btn span {
+  font-weight: 600;
+}
+
+.container .form-wrapper .form-group {
+  width: 100%;
+  padding: 40px;
+  margin-top: 20px;
+  border-radius: 10px;
+  background-color: #fff;
+  -webkit-box-shadow: 0px 10px 5px -3px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 10px 5px -3px rgba(0, 0, 0, 0.5);
+}
+
+.container .form-wrapper .form-group input {
+  width: 100%;
+  border: solid 1px #b9b6d3;
+  border-radius: 5px;
+  padding: 15px 20px;
+  font-weight: 600;
+}
+
+.container .form-wrapper .form-group input::-webkit-input-placeholder {
+  color: #3e3c49;
+  font-weight: 600;
+}
+
+.container .form-wrapper .form-group input:-ms-input-placeholder {
+  color: #3e3c49;
+  font-weight: 600;
+}
+
+.container .form-wrapper .form-group input::-ms-input-placeholder {
+  color: #3e3c49;
+  font-weight: 600;
+}
+
+.container .form-wrapper .form-group input::placeholder {
+  color: #3e3c49;
+  font-weight: 600;
+}
+
+.container .form-wrapper .form-group input:focus {
+  border: solid 1px #3e3c49;
+}
+
+.container .form-wrapper .form-group input:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.container .form-wrapper .form-group input.success {
+  border: solid 1px #38cc8c;
+}
+
+.container .form-wrapper .form-group input.err {
+  border: solid 1px #ff7a7a;
+}
+
+.container .form-wrapper .form-group .submit-btn {
+  background-color: #38cc8c;
+  -webkit-box-shadow: 0px 10px 5px -3px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 10px 5px -3px rgba(0, 0, 0, 0.5);
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 18px;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+.container .form-wrapper .form-group .submit-btn:hover {
+  opacity: .9;
+}
+
+.container .form-wrapper .form-group small {
+  margin-top: 15px;
+  display: block;
+  font-size: 12px;
+  text-align: center;
+  color: #b9b6d3;
+}
+
+.container .form-wrapper .form-group small span {
+  font-weight: 600;
+  color: #ff7a7a;
+}
+
+.container .form-wrapper .form-group .err-field {
+  color: #ff7a7a;
+  font-style: italic;
+  text-align: right;
+  margin-top: -10px;
+  margin-bottom: 20px;
+  display: none;
+}
+
+.container .form-wrapper .form-group .err-field.active {
+  display: block;
+}
+
+@media (max-width: 750px) {
+  body {
+    background-image: url("./images/bg-intro-mobile.png");
+  }
+  .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .container .intro {
+    width: 100%;
+  }
+  .container .intro h2 {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 15px;
+  }
+  .container .intro p {
+    text-align: center;
+    font-size: 14px;
+  }
+  .container .form-wrapper {
+    width: 100%;
+  }
+  .container .form-wrapper .btn {
+    font-size: 18px;
+  }
+  .container .form-wrapper .form-group {
+    padding: 20px;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
