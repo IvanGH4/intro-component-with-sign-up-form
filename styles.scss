@@ -72,6 +72,10 @@ body {
             span {
                 font-weight: 600;
             }
+
+            &:focus {
+                outline: none;
+            }
         }
 
         .form-group {
@@ -122,6 +126,10 @@ body {
     
                 &:hover {
                     opacity: .9;
+                }
+
+                &:focus {
+                    outline: none;
                 }
             }
 
@@ -183,6 +191,7 @@ body {
 
             .btn {
                 font-size: 18px;
+                padding: 15px 20px;
             }
 
             .form-group {

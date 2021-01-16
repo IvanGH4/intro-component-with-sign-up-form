@@ -72,6 +72,10 @@ body {
   font-weight: 600;
 }
 
+.container .form-wrapper .btn:focus {
+  outline: none;
+}
+
 .container .form-wrapper .form-group {
   width: 100%;
   padding: 40px;
@@ -141,6 +145,10 @@ body {
   opacity: .9;
 }
 
+.container .form-wrapper .form-group .submit-btn:focus {
+  outline: none;
+}
+
 .container .form-wrapper .form-group small {
   margin-top: 15px;
   display: block;
@@ -194,6 +202,7 @@ body {
   }
   .container .form-wrapper .btn {
     font-size: 18px;
+    padding: 15px 20px;
   }
   .container .form-wrapper .form-group {
     padding: 20px;
